@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-double e (int x, int n)
+double e (int x, int n) //the larger the n the more precise the result will be
 {
   static double p = 1, f = 1;
   double r;
@@ -21,6 +21,8 @@ double e (int x, int n)
 int main ()
 {
   double a;
-  a = e (3, 10);
+  a = e (3, 100);
   printf ("%f", a);
 }
+
+//OUTPUT - 20.085537

@@ -31,7 +31,7 @@ void merge(int A[],int l,int mid,int h){
 
 void mergeSort(int A[],int n){
 	int p,i,l,mid,h;
-	for(p=2;p<=n;p*2){
+	for(p=2;p<=n;p=p*2){
 		for(i=0;i+p-1<n;i=i+p){
 			l = i;
 			h = i+p-1;
